@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mainTitle">
+        <h1>Submision Rak Buku Dicoding</h1>
+      </div>
+      <form>
+        <h2>Tambah Buku :</h2>
+        <input type="text" id="judul" placeholder="Judul*" />
+        <input type="text" id="penulis" placeholder="Penulis" />
+        <input type="number" id="tahunTerbit" placeholder="Tahun Terbit" />
+        <div class="checkbox">
+          <label for="complete">Selesai Dibaca:</label>
+          <input type="checkbox" id="complete" />
+        </div>
+        <button id="addBtn">Tambah</button>
+        <button id="clearAllData">Hapus Semua Buku ⚠</button>
+      </form>
+      <div class="cariBuku">
+        <input type="search" id="search" onkeyup="search()" placeholder="Cari buku disini" title="Search"/>
+      </div>
+      <div class="rakBuku">
+        <div class="title2">
+          <h2>- Belum Selesai Dibaca -</h2>
+        </div>
+        <ul id="belumSelesaiDibaca" class="rakBuku-list"></ul>
+      </div>
+      <div class="rakBuku">
+        <div class="title2">
+          <h2>- Selesai Dibaca -</h2>
+        </div>
+        <ul id="selesaiDibaca" class="rakBuku-list"></ul>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
